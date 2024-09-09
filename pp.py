@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 import streamlit as st
-data_file_path = r"C:\Users\AKHIL\OneDrive\Desktop\clean\cleaned_data.csv"
-columns_file_path = r"C:\Users\AKHIL\OneDrive\Desktop\clean\columns_data.csv"
+import sklearn
+data_file_path = "cleaned_data.csv"
+columns_file_path="columns_data.csv"
 df = pd.read_csv(data_file_path)
 
 x=df.drop('price',axis='columns')
